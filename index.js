@@ -47,3 +47,31 @@ function addManager() {
         addTeam();
     });
 }
+
+function addTeam() {
+    inquirer.prompt([{
+
+            type: "list",
+            message: "Would you like to add a teammember?",
+            choices: ["Yes: Add an Engineer", "Yes: Add an Intern", "No: My team is complete"],
+            name: "addTeammate"
+        }
+
+    ])
+
+    .then(function(data) {
+        switch (data.addTeammate) {
+            case "Yes: Add an Engineer":
+                addEngineer();
+                break;
+
+            case "Yes: Add an Intern":
+                addIntern();
+                break;
+
+            case "No: My team is complete":
+                createTeam();
+                break;
+        }
+    });
+}
