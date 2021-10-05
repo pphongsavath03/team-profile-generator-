@@ -36,6 +36,7 @@ function addManager() {
             name: "email"
         },
         {
+            type: "number",
             message: "Please add manager's office number:",
             name: "officeNumber"
         },
