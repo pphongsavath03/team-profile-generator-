@@ -1,9 +1,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Employee = require('./emp/employee')
-const Engineer = require('./engineer')
-const Intern = require('./intern')
-const Manager = require('./manager')
+const Engineer = require('./emp/engineer')
+const Intern = require('./emp/intern')
+const Manager = require('./emp/manager')
 
 let teamEl = [];
 
