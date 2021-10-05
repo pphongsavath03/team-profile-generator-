@@ -192,7 +192,7 @@ function createTeam() {
         </div>
         </div>
         `
-        htmlArray.push(object)
+        htmlArr.push(object)
     }
 
     const htmlEnd = `
@@ -202,7 +202,7 @@ function createTeam() {
     `
     htmlArr.push(htmlEnd);
 
-    fs.writeFile(`./generated-html/${teamEl[0]}.html`, htmlArr.join(""), function(err) {
+    fs.writeFile(`./createdFile/${teamEl[0]}.html`, htmlArr.join(""), function(err) {
 
     })
 }
