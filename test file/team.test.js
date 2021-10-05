@@ -1,7 +1,7 @@
 const Employee = require("../emp/employee");
 const Manager = require("../emp/manager");
 const Engineer = require("../emp/engineer");
-const intern = require("../emp/intern");
+const Intern = require("../emp/intern");
 
 //test employee constructor
 
