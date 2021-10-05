@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const style = require("./assets/style")
 const Employee = require('./emp/employee')
 const Engineer = require('./emp/engineer')
 const Intern = require('./emp/intern')
