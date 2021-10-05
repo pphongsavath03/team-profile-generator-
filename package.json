@@ -1,23 +1,24 @@
 {
-  "name": "team-profile-generator-",
-  "version": "1.0.0",
-  "description": "create team profile",
-  "main": "index.js",
-  "dependencies": {
-    "inquirer": "^8.1.5"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pphongsavath03/team-profile-generator-.git"
-  },
-  "author": "phon phongsavath",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pphongsavath03/team-profile-generator-/issues"
-  },
-  "homepage": "https://github.com/pphongsavath03/team-profile-generator-#readme"
+    "name": "team-profile-generator-",
+    "version": "1.0.0",
+    "description": "create team profile",
+    "main": "index.js",
+    "dependencies": {
+        "inquirer": "^8.1.5",
+        "jest": "^27.2.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "node team.test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pphongsavath03/team-profile-generator-.git"
+    },
+    "author": "phon phongsavath",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pphongsavath03/team-profile-generator-/issues"
+    },
+    "homepage": "https://github.com/pphongsavath03/team-profile-generator-#readme"
 }
