@@ -11,7 +11,7 @@ let teamEl = [];
 function newTeam() {
     inquirer.prompt([{
 
-        message: 'Create a team name.',
+        message: 'Create a team name:',
         name: 'team'
 
     }])
@@ -27,17 +27,17 @@ function newTeam() {
 function addManager() {
     inquirer.prompt([{
 
-            message: "What is the team manager's name?",
+            message: "Please enter manager's name:",
             name: "name"
 
         },
         {
-            message: "Please add manager's email.",
+            message: "Please add manager's email:",
             name: "email"
         },
         {
             type: "number",
-            message: "Please add manager's office number",
+            message: "Please add manager's office number:",
             name: "office"
         },
     ])
@@ -66,15 +66,15 @@ function addTeam() {
 
     .then(function(data) {
         switch (data.addTeammate) {
-            case "Yes: Add an Engineer":
+            case "Yes: Add an Engineer.":
                 addEngineer();
                 break;
 
-            case "Yes: Add an Intern":
+            case "Yes: Add an Intern.":
                 addIntern();
                 break;
 
-            case "No: My team is complete":
+            case "No: My team is complete.":
                 createTeam();
                 break;
         }
@@ -84,16 +84,16 @@ function addTeam() {
 function addEngineer() {
     inquirer.prompt([{
 
-            message: "Please enter the engineer's name",
+            message: "Please enter the engineer's name:",
             name: "name"
 
         },
         {
-            message: "Please add engineer's email.",
+            message: "Please add engineer's email:",
             name: "email"
         },
         {
-            message: "Please add engineer's Github profile.",
+            message: "Please add engineer's Github profile:",
             name: "github"
         },
     ])
@@ -112,16 +112,16 @@ function addEngineer() {
 function addIntern() {
     inquirer.prompt([{
 
-            message: "Please enter the intern's name",
+            message: "Please enter the intern's name:",
             name: "name"
 
         },
         {
-            message: "Please add intern's email.",
+            message: "Please add intern's email:",
             name: "email"
         },
         {
-            message: "What school did the intern attend.",
+            message: "What school did the intern attend?",
             name: "school"
         },
     ])
