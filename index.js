@@ -11,7 +11,7 @@ let teamEl = [];
 function newTeam() {
     inquirer.prompt([{
 
-        message: 'Create a team name:',
+        message: 'Create a team name.',
         name: 'team'
 
     }])
@@ -36,18 +36,17 @@ function addManager() {
             name: "email"
         },
         {
-            type: "number",
             message: "Please add manager's office number:",
-            name: "office"
+            name: "officeNumber"
         },
     ])
 
     .then(function(data) {
         const name = data.name
-        const memberEl = 1
+        const memberEl = teamEl.length + 1
         const email = data.email
-        const office = data.office
-        const teamMember = new Manager(name, memberEl, email, office)
+        const officeNumber = data.officeNumber
+        const teamMember = new Manager(name, memberEl, email, officeNumber)
         teamEl.push(teamMember)
         addTeam();
     });
@@ -66,15 +65,15 @@ function addTeam() {
 
     .then(function(data) {
         switch (data.addTeammate) {
-            case "Yes: Add an Engineer.":
+            case "Yes: Add an Engineer":
                 addEngineer();
                 break;
 
-            case "Yes: Add an Intern.":
+            case "Yes: Add an Intern":
                 addIntern();
                 break;
 
-            case "No: My team is complete.":
+            case "No: My team is complete":
                 createTeam();
                 break;
         }
@@ -121,7 +120,7 @@ function addIntern() {
             name: "email"
         },
         {
-            message: "What school did the intern attend?",
+            message: "What school did the intern attend:",
             name: "school"
         },
     ])
@@ -171,11 +170,11 @@ function createTeam() {
             </div>
             <div class="card-bottom">
                 <p>Employee ID: ${teamEl[i].id}</p>
-                <p>Email: <a href="mailto:${teamEl[i].email}">${teamEl[i].email}</a>></p>
+                <p>Email: <a href="mailto:${teamEl[i].email}">${teamEl[i].email}</a></p>
         `
-        if (teamEl[i].office) {
+        if (teamEl[i].officeNumber) {
             object += `
-            <p>${teamEl[i].office}</p>
+            <p>${teamEl[i].officeNumber}</p>
             `
         }
         if (teamEl[i].github) {
