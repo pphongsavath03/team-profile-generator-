@@ -31,8 +31,8 @@ describe("Testing Employee inputs", () => {
 
     test("this function returns a name", () => {
         const test = "Bob";
-        const e = new Employee(test);
-        expect(e.getName()).toBe(test);
+        const emp = new Employee(test);
+        expect(emp.getName()).toBe(test);
     });
 
     test("this function returns a number", () => {
@@ -81,8 +81,8 @@ describe("Testing Engineer Inputs", () => {
 
     test("should return engineer values", () => {
         const test = "Engineer";
-        const e = new Engineer("Foo", 1, "engineer@gmail.com", "GitHubUser");
-        expect(e.getRole()).toBe(test);
+        const emp = new Engineer("Foo", 1, "engineer@gmail.com", "GitHubUser");
+        expect(emp.getRole()).toBe(test);
     });
 });
 
