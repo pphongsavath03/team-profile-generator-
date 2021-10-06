@@ -12,7 +12,7 @@ describe("Testing Employee inputs", () => {
     });
 
     test("Accept name via constructor", () => {
-        const name = "Phon";
+        const name = "Bob";
         const emp = new Employee(name);
         expect(emp.name).toBe(name);
     });
