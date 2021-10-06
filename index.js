@@ -175,7 +175,7 @@ function createTeam() {
         `
         if (teamEl[i].officeNumber) {
             object += `
-            <p>${teamEl[i].officeNumber}</p>
+            <p>Phone: ${teamEl[i].officeNumber}</p>
             `
         }
         if (teamEl[i].github) {
