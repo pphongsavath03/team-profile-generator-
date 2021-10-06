@@ -26,3 +26,11 @@ This application can be tested by running npm test in the the terminal.
 
 
 ![test](https://user-images.githubusercontent.com/87045456/136134070-c4e9d87a-5efe-459f-b5a6-ee59e1b0b59e.jpg)
+
+
+
+# Software
+
+* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
+
+* Uses the [Jest package](https://www.npmjs.com/package/jest) 
